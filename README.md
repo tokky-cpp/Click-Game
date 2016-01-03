@@ -3,7 +3,7 @@
 ##概要
 マウスで円をクリックすることで、点数が加算され、一定時間での点数を競うという内容のゲームです。
 
-<img src="http://karakuri-do.sakura.ne.jp/tokky/recruit2016winter/ClickGame.png" width="300">
+<img src="http://karakuri-do.sakura.ne.jp/tokky/recruit2016winter/ClickGame.png" width="500">
 
 ##動作環境
 ProcessingのインストールされたPC上で動作します。
