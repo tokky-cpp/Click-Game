@@ -57,17 +57,16 @@ void setup() {
     String[] read = new String[1];
     read=loadStrings("score.txt");//score.txtからデータ読み込み
     highScore=unhex(read[0]);//データ変換
-    
-   
+       
 }
 
 void draw(){
-    if(30-(millis()-startTime)/1000<=0){end=true;start=false;}
+     if(30-(millis()-startTime)/1000<=0){end=true;start=false;}
    
    background(255,255,255);
      
-        if(start){
-    for(int i=0;i<10;i++){
+    if(start){
+	for(int i=0;i<10;i++){
        
        
            count[i]--;
@@ -98,14 +97,7 @@ void draw(){
            text(30-(millis()-startTime)/1000,150,120);
             text("秒",200,120);
      
-        }//ここまでstart
-       
-       
-       
-       
-       
-       
-       
+        }//ここまでstart    
        
         if(!start&&!end){//ゲーム開始前
            fill(0,0,0);
@@ -129,17 +121,6 @@ void draw(){
                 lines[0]=hex((int)score);//変換して
                 saveStrings("score.txt",lines);//score.txtに書き込む
              }
-         }
-         
-         
-         
-           
-      
-        
+       }   
         
     }
-    
-
-
- 
-
